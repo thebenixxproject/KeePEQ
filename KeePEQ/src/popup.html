@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeePEQ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>KeePEQ</h1>
+        <div id="notification" class="notification"></div>
+        <input type="text" id="url" placeholder="Enter domain URL">
+        <div class="eq-controls">
+            <div class="band">
+                <label for="freq1">Frequency 1 <span class="tooltip">?<span class="tooltiptext">Adjust the center frequency of the band.</span></span></label>
+                <input type="range" id="freq1" min="20" max="20000" step="1">
+            </div>
+            <div class="band">
+                <label for="bandwidth1">Bandwidth 1 <span class="tooltip">?<span class="tooltiptext">Adjust the width of the frequency band.</span></span></label>
+                <input type="range" id="bandwidth1" min="0.1" max="10" step="0.1">
+            </div>
+            <div class="band">
+                <label for="freq2">Frequency 2</label>
+                <input type="range" id="freq2" min="20" max="20000" step="1">
+            </div>
+            <div class="band">
+                <label for="bandwidth2">Bandwidth 2</label>
+                <input type="range" id="bandwidth2" min="0.1" max="10" step="0.1">
+            </div>
+            <div class="band">
+                <label for="freq3">Frequency 3</label>
+                <input type="range" id="freq3" min="20" max="20000" step="1">
+            </div>
+            <div class="band">
+                <label for="bandwidth3">Bandwidth 3</label>
+                <input type="range" id="bandwidth3" min="0.1" max="10" step="0.1">
+            </div>
+            <div class="band">
+                <label for="freq4">Frequency 4</label>
+                <input type="range" id="freq4" min="20" max="20000" step="1">
+            </div>
+            <div class="band">
+                <label for="bandwidth4">Bandwidth 4</label>
+                <input type="range" id="bandwidth4" min="0.1" max="10" step="0.1">
+            </div>
+            <div class="band">
+                <label for="freq5">Frequency 5</label>
+                <input type="range" id="freq5" min="20" max="20000" step="1">
+            </div>
+            <div class="band">
+                <label for="bandwidth5">Bandwidth 5</label>
+                <input type="range" id="bandwidth5" min="0.1" max="10" step="0.1">
+            </div>
+        </div>
+        <input type="text" id="preset-name" placeholder="Preset name">
+        <button id="save">Save Settings</button>
+        <div id="presets">
+            <h2>Presets</h2>
+            <ul id="preset-list"></ul>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
